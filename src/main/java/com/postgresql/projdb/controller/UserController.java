@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000") // enable CORS for react vite
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"}) // enable CORS for react vite
 public class UserController {
 
     @Autowired
