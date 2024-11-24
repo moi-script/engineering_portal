@@ -45,11 +45,11 @@ public class UserController {
         return userBodyList;
     }
 
-    @GetMapping("/fetchById/{id}")
-    public User getUser(@PathVariable Long id){
-        User user = personRepo.findById(id).orElse(null);
-        return user;
-    }
+    // @GetMapping("/fetchById/{id}")
+    // public User getUser(@PathVariable Long id){
+    //     User user = personRepo.findById(id).orElse(null);
+    //     return user;
+    // }
     
 }
 
