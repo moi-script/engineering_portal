@@ -12,7 +12,7 @@ RUN mvn install
 COPY src ./src
 RUN mvn package
 
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 EXPOSE 8080
 
 COPY --from=build /app/target/projdb-0.0.1-SNAPSHOT.jar app.jar
